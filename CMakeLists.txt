@@ -30,5 +30,3 @@ target_link_libraries(CPUThreadPool pthread)
 
 add_executable(CPUThreadPool_NoBlock src/CPU线程池/CPUThreadPool_NoBlock.cpp)
 target_link_libraries(CPUThreadPool_NoBlock ${FOLLY_LIBRARIES})
-
-add_executable(IOThreadPool src/IO线程池/IOThreadPool.cpp)

@@ -113,7 +113,7 @@ public:
 
 int task1(int x)
 {
-    //cerr<<"线程id="<<this_thread::get_id()<<"输出："<<x<<endl;
+    cerr<<"线程id="<<this_thread::get_id()<<"输出："<<x<<endl;
     this_thread::sleep_for(chrono::milliseconds(10));
     return x;
 }
@@ -140,7 +140,6 @@ int main()
                 }
                 cout<<"result="<<result<<endl;
             });
-
 
     this_thread::sleep_for(std::chrono::seconds(10000));
     taskExecutor.shutdown();
